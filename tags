@@ -9,7 +9,7 @@ ARGC	arg.h	36;"	d
 ARGEND	arg.h	33;"	d
 ARGF	arg.h	44;"	d
 ARG_H__	arg.h	7;"	d
-ATTRCMP	st.h	14;"	d
+ATTRCMP	st.h	17;"	d
 ATTR_BLINK	st.h	/^	ATTR_BLINK      = 1 << 4,$/;"	e	enum:glyph_attribute
 ATTR_BOLD	st.h	/^	ATTR_BOLD       = 1 << 0,$/;"	e	enum:glyph_attribute
 ATTR_BOLD_FAINT	st.h	/^	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,$/;"	e	enum:glyph_attribute
@@ -23,10 +23,10 @@ ATTR_UNDERLINE	st.h	/^	ATTR_UNDERLINE  = 1 << 3,$/;"	e	enum:glyph_attribute
 ATTR_WDUMMY	st.h	/^	ATTR_WDUMMY     = 1 << 10,$/;"	e	enum:glyph_attribute
 ATTR_WIDE	st.h	/^	ATTR_WIDE       = 1 << 9,$/;"	e	enum:glyph_attribute
 ATTR_WRAP	st.h	/^	ATTR_WRAP       = 1 << 8,$/;"	e	enum:glyph_attribute
-Arg	st.h	/^} Arg;$/;"	t	typeref:union:__anon18
-BETWEEN	st.h	10;"	d
+Arg	st.h	/^} Arg;$/;"	t	typeref:union:__anon19
+BETWEEN	st.h	13;"	d
 CPPFLAGS	config.mk	/^CPPFLAGS = -DVERSION=\\"$(VERSION)\\" -D_XOPEN_SOURCE=600$/;"	m
-CSIEscape	st.c	/^} CSIEscape;$/;"	t	typeref:struct:__anon15	file:
+CSIEscape	st.c	/^} CSIEscape;$/;"	t	typeref:struct:__anon16	file:
 CS_FIN	st.c	/^	CS_FIN$/;"	e	enum:charset	file:
 CS_GER	st.c	/^	CS_GER,$/;"	e	enum:charset	file:
 CS_GRAPHIC0	st.c	/^	CS_GRAPHIC0,$/;"	e	enum:charset	file:
@@ -40,14 +40,14 @@ CURSOR_ORIGIN	st.c	/^	CURSOR_ORIGIN   = 2$/;"	e	enum:cursor_state	file:
 CURSOR_SAVE	st.c	/^	CURSOR_SAVE,$/;"	e	enum:cursor_movement	file:
 CURSOR_WRAPNEXT	st.c	/^	CURSOR_WRAPNEXT = 1,$/;"	e	enum:cursor_state	file:
 Color	x.c	/^typedef XftColor Color;$/;"	t	file:
-DC	x.c	/^} DC;$/;"	t	typeref:struct:__anon8	file:
-DEFAULT	st.h	12;"	d
-DIVCEIL	st.h	11;"	d
+DC	x.c	/^} DC;$/;"	t	typeref:struct:__anon9	file:
+DEFAULT	st.h	15;"	d
+DIVCEIL	st.h	14;"	d
 Draw	x.c	/^typedef XftDraw *Draw;$/;"	t	file:
 EARGF	arg.h	38;"	d
 ESC_ALTCHARSET	st.c	/^	ESC_ALTCHARSET = 8,$/;"	e	enum:escape_state	file:
-ESC_ARG_SIZ	st.c	35;"	d	file:
-ESC_BUF_SIZ	st.c	34;"	d	file:
+ESC_ARG_SIZ	st.c	37;"	d	file:
+ESC_BUF_SIZ	st.c	36;"	d	file:
 ESC_CSI	st.c	/^	ESC_CSI        = 2,$/;"	e	enum:escape_state	file:
 ESC_DCS	st.c	/^	ESC_DCS        =128,$/;"	e	enum:escape_state	file:
 ESC_START	st.c	/^	ESC_START      = 1,$/;"	e	enum:escape_state	file:
@@ -55,47 +55,52 @@ ESC_STR	st.c	/^	ESC_STR        = 4,  \/* OSC, PM, APC *\/$/;"	e	enum:escape_stat
 ESC_STR_END	st.c	/^	ESC_STR_END    = 16, \/* a final string was encountered *\/$/;"	e	enum:escape_state	file:
 ESC_TEST	st.c	/^	ESC_TEST       = 32, \/* Enter in test mode *\/$/;"	e	enum:escape_state	file:
 ESC_UTF8	st.c	/^	ESC_UTF8       = 64,$/;"	e	enum:escape_state	file:
-FRC_BOLD	x.c	/^	FRC_BOLD,$/;"	e	enum:__anon9	file:
-FRC_ITALIC	x.c	/^	FRC_ITALIC,$/;"	e	enum:__anon9	file:
-FRC_ITALICBOLD	x.c	/^	FRC_ITALICBOLD$/;"	e	enum:__anon9	file:
-FRC_NORMAL	x.c	/^	FRC_NORMAL,$/;"	e	enum:__anon9	file:
-Font	x.c	/^} Font;$/;"	t	typeref:struct:__anon7	file:
-Font	x.c	113;"	d	file:
-Fontcache	x.c	/^} Fontcache;$/;"	t	typeref:struct:__anon10	file:
-Glyph	st.h	/^} Glyph;$/;"	t	typeref:struct:__anon17
-Glyph	st.h	62;"	d
+FLOAT	x.c	/^	FLOAT = 2$/;"	e	enum:resource_type	file:
+FRC_BOLD	x.c	/^	FRC_BOLD,$/;"	e	enum:__anon10	file:
+FRC_ITALIC	x.c	/^	FRC_ITALIC,$/;"	e	enum:__anon10	file:
+FRC_ITALICBOLD	x.c	/^	FRC_ITALICBOLD$/;"	e	enum:__anon10	file:
+FRC_NORMAL	x.c	/^	FRC_NORMAL,$/;"	e	enum:__anon10	file:
+Font	x.c	/^} Font;$/;"	t	typeref:struct:__anon8	file:
+Font	x.c	129;"	d	file:
+Fontcache	x.c	/^} Fontcache;$/;"	t	typeref:struct:__anon11	file:
+Glyph	st.h	/^} Glyph;$/;"	t	typeref:struct:__anon18
+Glyph	st.h	78;"	d
 GlyphFontSpec	x.c	/^typedef XftGlyphFontSpec GlyphFontSpec;$/;"	t	file:
+HISTSIZE	st.h	7;"	d
 INCS	config.mk	/^INCS = -I$(X11INC) \\$/;"	m
-ISCONTROL	st.c	43;"	d	file:
-ISCONTROLC0	st.c	41;"	d	file:
-ISCONTROLC1	st.c	42;"	d	file:
-ISDELIM	st.c	44;"	d	file:
-IS_SET	st.c	40;"	d	file:
-IS_SET	x.c	68;"	d	file:
-IS_TRUECOL	st.h	21;"	d
+INTEGER	x.c	/^	INTEGER = 1,$/;"	e	enum:resource_type	file:
+ISCONTROL	st.c	46;"	d	file:
+ISCONTROLC0	st.c	44;"	d	file:
+ISCONTROLC1	st.c	45;"	d	file:
+ISDELIM	st.c	47;"	d	file:
+ISO14755CMD	st.c	50;"	d	file:
+IS_SET	st.c	42;"	d	file:
+IS_SET	x.c	82;"	d	file:
+IS_TRUECOL	st.h	24;"	d
 Key	x.c	/^} Key;$/;"	t	typeref:struct:__anon3	file:
-LEN	st.h	9;"	d
-LIBS	config.mk	/^LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \\$/;"	m
-LIMIT	st.h	13;"	d
+LEN	st.h	12;"	d
+LIBS	config.mk	/^LIBS = -L${X11LIB} -lm -lrt -lX11 -lutil -lXft -lXrender \\$/;"	m
+LIMIT	st.h	16;"	d
 Line	st.h	/^typedef Glyph *Line;$/;"	t
 MANPREFIX	config.mk	/^MANPREFIX = $(PREFIX)\/share\/man$/;"	m
-MAX	st.h	8;"	d
-MIN	st.h	7;"	d
-MODBIT	st.h	18;"	d
+MAX	st.h	11;"	d
+MIN	st.h	10;"	d
+MODBIT	st.h	21;"	d
 MODE_8BIT	win.h	/^	MODE_8BIT        = 1 << 10,$/;"	e	enum:win_mode
-MODE_ALTSCREEN	st.c	/^	MODE_ALTSCREEN   = 1 << 2,$/;"	e	enum:term_mode	file:
+MODE_ALTSCREEN	st.h	/^	MODE_ALTSCREEN   = 1 << 2,$/;"	e	enum:term_mode
 MODE_APPCURSOR	win.h	/^	MODE_APPCURSOR   = 1 << 8,$/;"	e	enum:win_mode
 MODE_APPKEYPAD	win.h	/^	MODE_APPKEYPAD   = 1 << 2,$/;"	e	enum:win_mode
 MODE_BLINK	win.h	/^	MODE_BLINK       = 1 << 11,$/;"	e	enum:win_mode
 MODE_BRCKTPASTE	win.h	/^	MODE_BRCKTPASTE  = 1 << 16,$/;"	e	enum:win_mode
-MODE_CRLF	st.c	/^	MODE_CRLF        = 1 << 3,$/;"	e	enum:term_mode	file:
-MODE_ECHO	st.c	/^	MODE_ECHO        = 1 << 4,$/;"	e	enum:term_mode	file:
+MODE_CRLF	st.h	/^	MODE_CRLF        = 1 << 3,$/;"	e	enum:term_mode
+MODE_ECHO	st.h	/^	MODE_ECHO        = 1 << 4,$/;"	e	enum:term_mode
 MODE_FBLINK	win.h	/^	MODE_FBLINK      = 1 << 12,$/;"	e	enum:win_mode
 MODE_FOCUS	win.h	/^	MODE_FOCUS       = 1 << 13,$/;"	e	enum:win_mode
 MODE_FOCUSED	win.h	/^	MODE_FOCUSED     = 1 << 1,$/;"	e	enum:win_mode
 MODE_HIDE	win.h	/^	MODE_HIDE        = 1 << 7,$/;"	e	enum:win_mode
-MODE_INSERT	st.c	/^	MODE_INSERT      = 1 << 1,$/;"	e	enum:term_mode	file:
+MODE_INSERT	st.h	/^	MODE_INSERT      = 1 << 1,$/;"	e	enum:term_mode
 MODE_KBDLOCK	win.h	/^	MODE_KBDLOCK     = 1 << 6,$/;"	e	enum:win_mode
+MODE_KBDSELECT	win.h	/^	MODE_KBDSELECT   = 1 << 18,$/;"	e	enum:win_mode
 MODE_MOUSE	win.h	/^	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\\$/;"	e	enum:win_mode
 MODE_MOUSEBTN	win.h	/^	MODE_MOUSEBTN    = 1 << 3,$/;"	e	enum:win_mode
 MODE_MOUSEMANY	win.h	/^	MODE_MOUSEMANY   = 1 << 15,$/;"	e	enum:win_mode
@@ -103,17 +108,21 @@ MODE_MOUSEMOTION	win.h	/^	MODE_MOUSEMOTION = 1 << 4,$/;"	e	enum:win_mode
 MODE_MOUSESGR	win.h	/^	MODE_MOUSESGR    = 1 << 9,$/;"	e	enum:win_mode
 MODE_MOUSEX10	win.h	/^	MODE_MOUSEX10    = 1 << 14,$/;"	e	enum:win_mode
 MODE_NUMLOCK	win.h	/^	MODE_NUMLOCK     = 1 << 17,$/;"	e	enum:win_mode
-MODE_PRINT	st.c	/^	MODE_PRINT       = 1 << 5,$/;"	e	enum:term_mode	file:
+MODE_PRINT	st.h	/^	MODE_PRINT       = 1 << 5,$/;"	e	enum:term_mode
 MODE_REVERSE	win.h	/^	MODE_REVERSE     = 1 << 5,$/;"	e	enum:win_mode
-MODE_SIXEL	st.c	/^	MODE_SIXEL       = 1 << 7,$/;"	e	enum:term_mode	file:
-MODE_UTF8	st.c	/^	MODE_UTF8        = 1 << 6,$/;"	e	enum:term_mode	file:
+MODE_SIXEL	st.h	/^	MODE_SIXEL       = 1 << 7,$/;"	e	enum:term_mode
+MODE_UTF8	st.h	/^	MODE_UTF8        = 1 << 6,$/;"	e	enum:term_mode
 MODE_VISIBLE	win.h	/^	MODE_VISIBLE     = 1 << 0,$/;"	e	enum:win_mode
-MODE_WRAP	st.c	/^	MODE_WRAP        = 1 << 0,$/;"	e	enum:term_mode	file:
+MODE_WRAP	st.h	/^	MODE_WRAP        = 1 << 0,$/;"	e	enum:term_mode
 MODKEY	config.def.h	164;"	d
 MODKEY	config.h	197;"	d
+MouseKey	st.h	/^} MouseKey;$/;"	t	typeref:struct:__anon20
 MouseShortcut	x.c	/^} MouseShortcut;$/;"	t	typeref:struct:__anon2	file:
+NUMMAXLEN	st.c	43;"	d	file:
 OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+OPAQUE	win.h	28;"	d
 PREFIX	config.mk	/^PREFIX = \/usr\/local$/;"	m
+ResourcePref	x.c	/^} ResourcePref;$/;"	t	typeref:struct:__anon4	file:
 Rune	st.h	/^typedef uint_least32_t Rune;$/;"	t
 SEL_EMPTY	st.h	/^	SEL_EMPTY = 1,$/;"	e	enum:selection_mode
 SEL_IDLE	st.h	/^	SEL_IDLE = 0,$/;"	e	enum:selection_mode
@@ -125,106 +134,114 @@ SNAP_WORD	st.h	/^	SNAP_WORD = 1,$/;"	e	enum:selection_snap
 SRC	Makefile	/^SRC = st.c x.c$/;"	m
 STCFLAGS	config.mk	/^STCFLAGS = $(INCS) $(CPPFLAGS) $(CFLAGS)$/;"	m
 STLDFLAGS	config.mk	/^STLDFLAGS = $(LIBS) $(LDFLAGS)$/;"	m
-STREscape	st.c	/^} STREscape;$/;"	t	typeref:struct:__anon16	file:
-STR_ARG_SIZ	st.c	37;"	d	file:
-STR_BUF_SIZ	st.c	36;"	d	file:
-Selection	st.c	/^} Selection;$/;"	t	typeref:struct:__anon12	file:
+STREscape	st.c	/^} STREscape;$/;"	t	typeref:struct:__anon17	file:
+STRING	x.c	/^	STRING = 0,$/;"	e	enum:resource_type	file:
+STR_ARG_SIZ	st.c	39;"	d	file:
+STR_BUF_SIZ	st.c	38;"	d	file:
+Selection	st.c	/^} Selection;$/;"	t	typeref:struct:__anon13	file:
 Shortcut	x.c	/^} Shortcut;$/;"	t	typeref:struct:__anon1	file:
-TCursor	st.c	/^} TCursor;$/;"	t	typeref:struct:__anon11	file:
+TCursor	st.c	/^} TCursor;$/;"	t	typeref:struct:__anon12	file:
 TERMMOD	config.def.h	165;"	d
-TIMEDIFF	st.h	16;"	d
-TRUEBLUE	x.c	71;"	d	file:
-TRUECOLOR	st.h	20;"	d
-TRUEGREEN	x.c	70;"	d	file:
-TRUERED	x.c	69;"	d	file:
-Term	st.c	/^} Term;$/;"	t	typeref:struct:__anon14	file:
-TermWindow	x.c	/^} TermWindow;$/;"	t	typeref:struct:__anon4	file:
-UTF_INVALID	st.c	32;"	d	file:
-UTF_SIZ	st.c	33;"	d	file:
+TIMEDIFF	st.h	19;"	d
+TLINE	st.h	25;"	d
+TRUEBLUE	x.c	85;"	d	file:
+TRUECOLOR	st.h	23;"	d
+TRUEGREEN	x.c	84;"	d	file:
+TRUERED	x.c	83;"	d	file:
+Term	st.c	/^} Term;$/;"	t	typeref:struct:__anon15	file:
+TermWindow	x.c	/^} TermWindow;$/;"	t	typeref:struct:__anon5	file:
+USE_ARGB	win.h	29;"	d
+UTF_INVALID	st.c	34;"	d	file:
+UTF_SIZ	st.c	35;"	d	file:
 VERSION	config.mk	/^VERSION = 0.8.1$/;"	m
 X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
 X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
-XEMBED_FOCUS_IN	x.c	64;"	d	file:
-XEMBED_FOCUS_OUT	x.c	65;"	d	file:
-XK_ANY_MOD	x.c	47;"	d	file:
-XK_NO_MOD	x.c	48;"	d	file:
-XK_SWITCH_MOD	x.c	49;"	d	file:
-XSelection	x.c	/^} XSelection;$/;"	t	typeref:struct:__anon6	file:
-XWindow	x.c	/^} XWindow;$/;"	t	typeref:struct:__anon5	file:
+XEMBED_FOCUS_IN	x.c	78;"	d	file:
+XEMBED_FOCUS_OUT	x.c	79;"	d	file:
+XK_ANY_MOD	x.c	61;"	d	file:
+XK_NO_MOD	x.c	62;"	d	file:
+XK_SWITCH_MOD	x.c	63;"	d	file:
+XSelection	x.c	/^} XSelection;$/;"	t	typeref:struct:__anon7	file:
+XWindow	x.c	/^} XWindow;$/;"	t	typeref:struct:__anon6	file:
 actionfps	config.def.h	/^static unsigned int actionfps = 30;$/;"	v
 actionfps	config.h	/^static unsigned int actionfps = 30;$/;"	v
 allowaltscreen	config.def.h	/^int allowaltscreen = 1;$/;"	v
 allowaltscreen	config.h	/^int allowaltscreen = 1;$/;"	v
 alpha	config.h	/^unsigned int alpha = 0xed;$/;"	v
-alt	st.c	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anon14	file:
-alt	st.c	/^	int alt;$/;"	m	struct:__anon12	file:
+alt	st.c	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anon15	file:
+alt	st.c	/^	int alt;$/;"	m	struct:__anon13	file:
 appcursor	x.c	/^	signed char appcursor; \/* application cursor *\/$/;"	m	struct:__anon3	file:
 appkey	x.c	/^	signed char appkey;    \/* application keypad *\/$/;"	m	struct:__anon3	file:
-arg	st.c	/^	int arg[ESC_ARG_SIZ];$/;"	m	struct:__anon15	file:
+arg	st.c	/^	int arg[ESC_ARG_SIZ];$/;"	m	struct:__anon16	file:
+arg	st.h	/^	const Arg arg;$/;"	m	struct:__anon20
 arg	x.c	/^	const Arg arg;$/;"	m	struct:__anon1	file:
-args	st.c	/^	char *args[STR_ARG_SIZ];$/;"	m	struct:__anon16	file:
+args	st.c	/^	char *args[STR_ARG_SIZ];$/;"	m	struct:__anon17	file:
 argv0	x.c	/^static char *argv0;$/;"	v	file:
-ascent	x.c	/^	int ascent;$/;"	m	struct:__anon7	file:
+ascent	x.c	/^	int ascent;$/;"	m	struct:__anon8	file:
 ascii_printable	config.def.h	/^static char ascii_printable[] =$/;"	v
 ascii_printable	config.h	/^static char ascii_printable[] =$/;"	v
-attr	st.c	/^	Glyph attr; \/* current char attributes *\/$/;"	m	struct:__anon11	file:
-attrs	x.c	/^	XSetWindowAttributes attrs;$/;"	m	struct:__anon5	file:
+attr	st.c	/^	Glyph attr; \/* current char attributes *\/$/;"	m	struct:__anon12	file:
+attrs	x.c	/^	XSetWindowAttributes attrs;$/;"	m	struct:__anon6	file:
+b	st.h	/^	uint b;$/;"	m	struct:__anon20
 b	x.c	/^	uint b;$/;"	m	struct:__anon2	file:
-badslant	x.c	/^	int badslant;$/;"	m	struct:__anon7	file:
-badweight	x.c	/^	int badweight;$/;"	m	struct:__anon7	file:
+badslant	x.c	/^	int badslant;$/;"	m	struct:__anon8	file:
+badweight	x.c	/^	int badweight;$/;"	m	struct:__anon8	file:
 base64_digits	st.c	/^static const char base64_digits[] = {$/;"	v	file:
 base64dec	st.c	/^base64dec(const char *src)$/;"	f
 base64dec_getc	st.c	/^base64dec_getc(const char **src)$/;"	f
 bellvolume	config.def.h	/^static int bellvolume = 0;$/;"	v
 bellvolume	config.h	/^static int bellvolume = 0;$/;"	v
-bfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon8	file:
-bg	st.h	/^	uint32_t bg;      \/* background  *\/$/;"	m	struct:__anon17
+bfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon9	file:
+bg	st.h	/^	uint32_t bg;      \/* background  *\/$/;"	m	struct:__anon18
 blinktimeout	config.def.h	/^static unsigned int blinktimeout = 800;$/;"	v
 blinktimeout	config.h	/^static unsigned int blinktimeout = 800;$/;"	v
 bmotion	x.c	/^bmotion(XEvent *e)$/;"	f
 borderpx	config.def.h	/^static int borderpx = 2;$/;"	v
 borderpx	config.h	/^static int borderpx = 2;$/;"	v
-bot	st.c	/^	int bot;      \/* bottom scroll limit *\/$/;"	m	struct:__anon14	file:
+bot	st.c	/^	int bot;      \/* bottom scroll limit *\/$/;"	m	struct:__anon15	file:
 bpress	x.c	/^bpress(XEvent *e)$/;"	f
 brelease	x.c	/^brelease(XEvent *e)$/;"	f
-buf	st.c	/^	char buf[ESC_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon15	file:
-buf	st.c	/^	char buf[STR_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon16	file:
-buf	x.c	/^	Drawable buf;$/;"	m	struct:__anon5	file:
-c	st.c	/^	TCursor c;    \/* cursor *\/$/;"	m	struct:__anon14	file:
-ch	x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon4	file:
-charset	st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon14	file:
+buf	st.c	/^	char buf[ESC_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon16	file:
+buf	st.c	/^	char buf[STR_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anon17	file:
+buf	x.c	/^	Drawable buf;$/;"	m	struct:__anon6	file:
+c	st.c	/^	TCursor c;    \/* cursor *\/$/;"	m	struct:__anon15	file:
+ch	x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon5	file:
+charset	st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon15	file:
 charset	st.c	/^enum charset {$/;"	g	file:
 chscale	config.def.h	/^static float chscale = 1.0;$/;"	v
 chscale	config.h	/^static float chscale = 1.0;$/;"	v
-clipboard	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon6	file:
+clipboard	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon7	file:
 clipcopy	x.c	/^clipcopy(const Arg *dummy)$/;"	f
 clippaste	x.c	/^clippaste(const Arg *dummy)$/;"	f
-cmap	x.c	/^	Colormap cmap;$/;"	m	struct:__anon5	file:
+cmap	x.c	/^	Colormap cmap;$/;"	m	struct:__anon6	file:
 cmdfd	st.c	/^static int cmdfd;$/;"	v	file:
 cmessage	x.c	/^cmessage(XEvent *e)$/;"	f
-col	st.c	/^	int col;      \/* nb col *\/$/;"	m	struct:__anon14	file:
-col	x.c	/^	Color *col;$/;"	m	struct:__anon8	file:
-collen	x.c	/^	size_t collen;$/;"	m	struct:__anon8	file:
+col	st.c	/^	int col;      \/* nb col *\/$/;"	m	struct:__anon15	file:
+col	x.c	/^	Color *col;$/;"	m	struct:__anon9	file:
+collen	x.c	/^	size_t collen;$/;"	m	struct:__anon9	file:
 colorname	config.def.h	/^static const char *colorname[] = {$/;"	v
 colorname	config.h	/^static const char *colorname[] = {$/;"	v
 cols	config.def.h	/^static unsigned int cols = 80;$/;"	v
 cols	config.h	/^static unsigned int cols = 80;$/;"	v
+config_init	x.c	/^config_init(void)$/;"	f
+copyurl	st.c	/^copyurl(const Arg *arg) {$/;"	f
 cresize	x.c	/^cresize(int width, int height)$/;"	f
 csidump	st.c	/^csidump(void)$/;"	f
 csiescseq	st.c	/^static CSIEscape csiescseq;$/;"	v	file:
 csihandle	st.c	/^csihandle(void)$/;"	f
 csiparse	st.c	/^csiparse(void)$/;"	f
 csireset	st.c	/^csireset(void)$/;"	f
-cursor	x.c	/^	int cursor; \/* cursor style *\/$/;"	m	struct:__anon4	file:
+cursor	x.c	/^	int cursor; \/* cursor style *\/$/;"	m	struct:__anon5	file:
 cursor_movement	st.c	/^enum cursor_movement {$/;"	g	file:
 cursor_state	st.c	/^enum cursor_state {$/;"	g	file:
 cursorshape	config.def.h	/^static unsigned int cursorshape = 2;$/;"	v
 cursorshape	config.h	/^static unsigned int cursorshape = 2;$/;"	v
 cursorthickness	config.def.h	/^static unsigned int cursorthickness = 2;$/;"	v
 cursorthickness	config.h	/^static unsigned int cursorthickness = 2;$/;"	v
-cw	x.c	/^	int cw; \/* char width  *\/$/;"	m	struct:__anon4	file:
+cw	x.c	/^	int cw; \/* char width  *\/$/;"	m	struct:__anon5	file:
 cwscale	config.def.h	/^static float cwscale = 1.0;$/;"	v
 cwscale	config.h	/^static float cwscale = 1.0;$/;"	v
+cyo	x.c	/^	int cyo; \/* char y offset *\/$/;"	m	struct:__anon5	file:
 dc	x.c	/^static DC dc;$/;"	v	file:
 defaultattr	config.def.h	/^static unsigned int defaultattr = 11;$/;"	v
 defaultattr	config.h	/^static unsigned int defaultattr = 11;$/;"	v
@@ -237,75 +254,87 @@ defaultfg	config.h	/^unsigned int defaultfg = 15;$/;"	v
 defaultfontsize	x.c	/^static double defaultfontsize = 0;$/;"	v	file:
 defaultrcs	config.def.h	/^static unsigned int defaultrcs = 257;$/;"	v
 defaultrcs	config.h	/^static unsigned int defaultrcs = 0;$/;"	v
-descent	x.c	/^	int descent;$/;"	m	struct:__anon7	file:
+depth	x.c	/^	int depth; \/* bit depth *\/$/;"	m	struct:__anon6	file:
+descent	x.c	/^	int descent;$/;"	m	struct:__anon8	file:
 die	st.c	/^die(const char *errstr, ...)$/;"	f
-dirty	st.c	/^	int *dirty;   \/* dirtyness of lines *\/$/;"	m	struct:__anon14	file:
+dirty	st.c	/^	int *dirty;   \/* dirtyness of lines *\/$/;"	m	struct:__anon15	file:
 doubleclicktimeout	config.def.h	/^static unsigned int doubleclicktimeout = 300;$/;"	v
 doubleclicktimeout	config.h	/^static unsigned int doubleclicktimeout = 300;$/;"	v
-dpy	x.c	/^	Display *dpy;$/;"	m	struct:__anon5	file:
+dpy	x.c	/^	Display *dpy;$/;"	m	struct:__anon6	file:
 draw	st.c	/^draw(void)$/;"	f
-draw	x.c	/^	Draw draw;$/;"	m	struct:__anon5	file:
+draw	x.c	/^	Draw draw;$/;"	m	struct:__anon6	file:
 drawregion	st.c	/^drawregion(int x1, int y1, int x2, int y2)$/;"	f
-esc	st.c	/^	int esc;      \/* escape state flags *\/$/;"	m	struct:__anon14	file:
+dst	x.c	/^	void *dst;$/;"	m	struct:__anon4	file:
+esc	st.c	/^	int esc;      \/* escape state flags *\/$/;"	m	struct:__anon15	file:
 escape_state	st.c	/^enum escape_state {$/;"	g	file:
 eschandle	st.c	/^eschandle(uchar ascii)$/;"	f
 evcol	x.c	/^evcol(XEvent *e)$/;"	f
 evrow	x.c	/^evrow(XEvent *e)$/;"	f
 execsh	st.c	/^execsh(char *cmd, char **args)$/;"	f
 expose	x.c	/^expose(XEvent *ev)$/;"	f
-f	st.h	/^	float f;$/;"	m	union:__anon18
-fg	st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anon17
-flags	x.c	/^	int flags;$/;"	m	struct:__anon10	file:
+externalpipe	st.c	/^externalpipe(const Arg *arg)$/;"	f
+f	st.h	/^	float f;$/;"	m	union:__anon19
+fg	st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anon18
+findlastany	st.c	/^findlastany(char *str, const char** find, size_t len)$/;"	f
+flags	x.c	/^	int flags;$/;"	m	struct:__anon11	file:
 focus	x.c	/^focus(XEvent *ev)$/;"	f
 font	config.def.h	/^static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";$/;"	v
 font	config.h	/^static char *font = "mono:pixelsize=16:antialias=true:autohint=true";$/;"	v
-font	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon8	file:
-font	x.c	/^	XftFont *font;$/;"	m	struct:__anon10	file:
+font	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon9	file:
+font	x.c	/^	XftFont *font;$/;"	m	struct:__anon11	file:
 forceselmod	config.def.h	/^static uint forceselmod = ShiftMask;$/;"	v
 forceselmod	config.h	/^static uint forceselmod = ShiftMask;$/;"	v
 frc	x.c	/^static Fontcache frc[16];$/;"	v	file:
 frclen	x.c	/^static int frclen = 0;$/;"	v	file:
+func	st.h	/^	void (*func)(const Arg *);$/;"	m	struct:__anon20
 func	x.c	/^	void (*func)(const Arg *);$/;"	m	struct:__anon1	file:
-gc	x.c	/^	GC gc;$/;"	m	struct:__anon8	file:
+gc	x.c	/^	GC gc;$/;"	m	struct:__anon9	file:
 getsel	st.c	/^getsel(void)$/;"	f
 glyph_attribute	st.h	/^enum glyph_attribute {$/;"	g
-gm	x.c	/^	int gm; \/* geometry mask *\/$/;"	m	struct:__anon5	file:
-h	x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon4	file:
+gm	x.c	/^	int gm; \/* geometry mask *\/$/;"	m	struct:__anon6	file:
+h	x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon5	file:
 handler	x.c	/^static void (*handler[LASTEvent])(XEvent *) = {$/;"	v	file:
-height	x.c	/^	int height;$/;"	m	struct:__anon7	file:
-i	st.h	/^	int i;$/;"	m	union:__anon18
-ibfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon8	file:
-icharset	st.c	/^	int icharset; \/* selected charset for sequence *\/$/;"	m	struct:__anon14	file:
-ifont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon8	file:
+height	x.c	/^	int height;$/;"	m	struct:__anon8	file:
+hist	st.c	/^	Line hist[HISTSIZE]; \/* history buffer *\/$/;"	m	struct:__anon15	file:
+histi	st.c	/^	int histi;    \/* history index *\/$/;"	m	struct:__anon15	file:
+i	st.h	/^	int i;$/;"	m	union:__anon19
+ibfont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon9	file:
+icharset	st.c	/^	int icharset; \/* selected charset for sequence *\/$/;"	m	struct:__anon15	file:
+ifont	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon9	file:
 ignoremod	config.def.h	/^static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;$/;"	v
 ignoremod	config.h	/^static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;$/;"	v
 iofd	st.c	/^static int iofd = 1;$/;"	v	file:
-isfixed	x.c	/^	int isfixed; \/* is fixed geometry? *\/$/;"	m	struct:__anon5	file:
+isfixed	x.c	/^	int isfixed; \/* is fixed geometry? *\/$/;"	m	struct:__anon6	file:
+iso14755	st.c	/^iso14755(const Arg *arg)$/;"	f
 k	x.c	/^	KeySym k;$/;"	m	struct:__anon3	file:
 key	config.def.h	/^static Key key[] = {$/;"	v
 key	config.h	/^static Key key[] = {$/;"	v
+keyboard_select	x.c	/^void keyboard_select(const Arg *dummy) {$/;"	f
 keysym	x.c	/^	KeySym keysym;$/;"	m	struct:__anon1	file:
 kmap	x.c	/^kmap(KeySym k, uint state)$/;"	f
 kpress	x.c	/^kpress(XEvent *ev)$/;"	f
-l	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon5	file:
-lbearing	x.c	/^	short lbearing;$/;"	m	struct:__anon7	file:
-len	st.c	/^	int len;               \/* raw string length *\/$/;"	m	struct:__anon15	file:
+kscrolldown	st.c	/^kscrolldown(const Arg* a)$/;"	f
+kscrollup	st.c	/^kscrollup(const Arg* a)$/;"	f
+l	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon6	file:
+lbearing	x.c	/^	short lbearing;$/;"	m	struct:__anon8	file:
 len	st.c	/^	int len;               \/* raw string length *\/$/;"	m	struct:__anon16	file:
-line	st.c	/^	Line *line;   \/* screen *\/$/;"	m	struct:__anon14	file:
+len	st.c	/^	int len;               \/* raw string length *\/$/;"	m	struct:__anon17	file:
+line	st.c	/^	Line *line;   \/* screen *\/$/;"	m	struct:__anon15	file:
 main	x.c	/^main(int argc, char *argv[])$/;"	f
 mappedkeys	config.def.h	/^static KeySym mappedkeys[] = { -1 };$/;"	v
 mappedkeys	config.h	/^static KeySym mappedkeys[] = { -1 };$/;"	v
+mask	st.h	/^	uint mask;$/;"	m	struct:__anon20
 mask	x.c	/^	uint mask;$/;"	m	struct:__anon2	file:
 mask	x.c	/^	uint mask;$/;"	m	struct:__anon3	file:
-match	x.c	/^	XftFont *match;$/;"	m	struct:__anon7	file:
+match	x.c	/^	XftFont *match;$/;"	m	struct:__anon8	file:
 match	x.c	/^match(uint mask, uint state)$/;"	f
 mkeys	config.h	/^MouseKey mkeys[] = {$/;"	v
 mod	x.c	/^	uint mod;$/;"	m	struct:__anon1	file:
-mode	st.c	/^	char mode[2];$/;"	m	struct:__anon15	file:
-mode	st.c	/^	int mode;     \/* terminal mode flags *\/$/;"	m	struct:__anon14	file:
-mode	st.c	/^	int mode;$/;"	m	struct:__anon12	file:
-mode	st.h	/^	ushort mode;      \/* attribute flags *\/$/;"	m	struct:__anon17
-mode	x.c	/^	int mode; \/* window state\/mode flags *\/$/;"	m	struct:__anon4	file:
+mode	st.c	/^	char mode[2];$/;"	m	struct:__anon16	file:
+mode	st.c	/^	int mode;     \/* terminal mode flags *\/$/;"	m	struct:__anon15	file:
+mode	st.c	/^	int mode;$/;"	m	struct:__anon13	file:
+mode	st.h	/^	ushort mode;      \/* attribute flags *\/$/;"	m	struct:__anon18
+mode	x.c	/^	int mode; \/* window state\/mode flags *\/$/;"	m	struct:__anon5	file:
 mousebg	config.def.h	/^static unsigned int mousebg = 0;$/;"	v
 mousebg	config.h	/^static unsigned int mousebg = 0;$/;"	v
 mousefg	config.def.h	/^static unsigned int mousefg = 7;$/;"	v
@@ -316,18 +345,20 @@ mouseshape	config.def.h	/^static unsigned int mouseshape = XC_xterm;$/;"	v
 mouseshape	config.h	/^static unsigned int mouseshape = XC_xterm;$/;"	v
 mshortcuts	config.def.h	/^static MouseShortcut mshortcuts[] = {$/;"	v
 mshortcuts	config.h	/^static MouseShortcut mshortcuts[] = {$/;"	v
-narg	st.c	/^	int narg;              \/* nb of args *\/$/;"	m	struct:__anon15	file:
+name	x.c	/^	char *name;$/;"	m	struct:__anon4	file:
 narg	st.c	/^	int narg;              \/* nb of args *\/$/;"	m	struct:__anon16	file:
-nb	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon12	typeref:struct:__anon12::__anon13	file:
-ne	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon12	typeref:struct:__anon12::__anon13	file:
-netwmname	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon5	file:
-netwmpid	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon5	file:
+narg	st.c	/^	int narg;              \/* nb of args *\/$/;"	m	struct:__anon17	file:
+nb	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	file:
+ne	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	file:
+netwmname	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon6	file:
+netwmpid	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon6	file:
 numlock	x.c	/^numlock(const Arg *dummy)$/;"	f
-ob	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon12	typeref:struct:__anon12::__anon13	file:
-ocx	st.c	/^	int ocx;      \/* old cursor col *\/$/;"	m	struct:__anon14	file:
-ocy	st.c	/^	int ocy;      \/* old cursor row *\/$/;"	m	struct:__anon14	file:
-oe	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon12	typeref:struct:__anon12::__anon13	file:
+ob	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	file:
+ocx	st.c	/^	int ocx;      \/* old cursor col *\/$/;"	m	struct:__anon15	file:
+ocy	st.c	/^	int ocy;      \/* old cursor row *\/$/;"	m	struct:__anon15	file:
+oe	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	file:
 oldbutton	x.c	/^static int oldbutton = 3; \/* button event on startup: 3 = release *\/$/;"	v	file:
+opencopied	x.c	/^opencopied(const Arg *arg)$/;"	f
 openurlcmd	config.h	/^static char *openurlcmd[] = { "\/bin\/sh", "-c",$/;"	v
 opt_class	x.c	/^static char *opt_class = NULL;$/;"	v	file:
 opt_cmd	x.c	/^static char **opt_cmd  = NULL;$/;"	v	file:
@@ -337,28 +368,33 @@ opt_io	x.c	/^static char *opt_io    = NULL;$/;"	v	file:
 opt_line	x.c	/^static char *opt_line  = NULL;$/;"	v	file:
 opt_name	x.c	/^static char *opt_name  = NULL;$/;"	v	file:
 opt_title	x.c	/^static char *opt_title = NULL;$/;"	v	file:
-pattern	x.c	/^	FcPattern *pattern;$/;"	m	struct:__anon7	file:
+pattern	x.c	/^	FcPattern *pattern;$/;"	m	struct:__anon8	file:
 pid	st.c	/^static pid_t pid;$/;"	v	file:
-primary	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon6	file:
+primary	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon7	file:
 printscreen	st.c	/^printscreen(const Arg *arg)$/;"	f
 printsel	st.c	/^printsel(const Arg *arg)$/;"	f
-priv	st.c	/^	char priv;$/;"	m	struct:__anon15	file:
+priv	st.c	/^	char priv;$/;"	m	struct:__anon16	file:
 propnotify	x.c	/^propnotify(XEvent *e)$/;"	f
-rbearing	x.c	/^	short rbearing;$/;"	m	struct:__anon7	file:
+rbearing	x.c	/^	short rbearing;$/;"	m	struct:__anon8	file:
 redraw	st.c	/^redraw(void)$/;"	f
 resettitle	st.c	/^resettitle(void)$/;"	f
 resize	x.c	/^resize(XEvent *e)$/;"	f
+resource_load	x.c	/^resource_load(XrmDatabase db, char *name, enum resource_type rtype, void *dst)$/;"	f
+resource_type	x.c	/^enum resource_type {$/;"	g	file:
 resources	config.h	/^ResourcePref resources[] = {$/;"	v
-row	st.c	/^	int row;      \/* nb row *\/$/;"	m	struct:__anon14	file:
+row	st.c	/^	int row;      \/* nb row *\/$/;"	m	struct:__anon15	file:
 rows	config.def.h	/^static unsigned int rows = 24;$/;"	v
 rows	config.h	/^static unsigned int rows = 24;$/;"	v
 run	x.c	/^run(void)$/;"	f
 s	x.c	/^	char *s;$/;"	m	struct:__anon2	file:
 s	x.c	/^	char *s;$/;"	m	struct:__anon3	file:
-scr	x.c	/^	int scr;$/;"	m	struct:__anon5	file:
+scr	st.c	/^	int scr;      \/* scroll back *\/$/;"	m	struct:__anon15	file:
+scr	x.c	/^	int scr;$/;"	m	struct:__anon6	file:
+search	st.c	/^void search(int selectsearch_mode, Rune *target, int ptarget, int incr, int type, TCursor *cu) {$/;"	f
 sel	st.c	/^static Selection sel;$/;"	v	file:
 selclear	st.c	/^selclear(void)$/;"	f
 selclear_	x.c	/^selclear_(XEvent *e)$/;"	f
+select_or_drawcursor	st.c	/^void select_or_drawcursor(int selectsearch_mode, int type) {$/;"	f
 selected	st.c	/^selected(int x, int y)$/;"	f
 selection_mode	st.h	/^enum selection_mode {$/;"	g
 selection_snap	st.h	/^enum selection_snap {$/;"	g
@@ -375,7 +411,8 @@ selscroll	st.c	/^selscroll(int orig, int n)$/;"	f
 selsnap	st.c	/^selsnap(int *x, int *y, int direction)$/;"	f
 selstart	st.c	/^selstart(int col, int row, int snap)$/;"	f
 sendbreak	st.c	/^sendbreak(const Arg *arg)$/;"	f
-set	x.c	/^	FcFontSet *set;$/;"	m	struct:__anon7	file:
+set	x.c	/^	FcFontSet *set;$/;"	m	struct:__anon8	file:
+set_notifmode	st.c	/^void set_notifmode(int type, KeySym ksym) {$/;"	f
 setsel	x.c	/^setsel(char *str, Time t)$/;"	f
 shell	config.def.h	/^static char *shell = "\/bin\/sh";$/;"	v
 shell	config.h	/^static char *shell = "\/usr\/bin\/zsh";$/;"	v
@@ -383,9 +420,9 @@ shortcuts	config.def.h	/^static Shortcut shortcuts[] = {$/;"	v
 shortcuts	config.h	/^static Shortcut shortcuts[] = {$/;"	v
 sigchld	st.c	/^sigchld(int a)$/;"	f
 sixd_to_16bit	x.c	/^sixd_to_16bit(int x)$/;"	f
-snap	st.c	/^	int snap;$/;"	m	struct:__anon12	file:
-specbuf	x.c	/^	GlyphFontSpec *specbuf; \/* font spec buffer used for rendering *\/$/;"	m	struct:__anon5	file:
-state	st.c	/^	char state;$/;"	m	struct:__anon11	file:
+snap	st.c	/^	int snap;$/;"	m	struct:__anon13	file:
+specbuf	x.c	/^	GlyphFontSpec *specbuf; \/* font spec buffer used for rendering *\/$/;"	m	struct:__anon6	file:
+state	st.c	/^	char state;$/;"	m	struct:__anon12	file:
 strdump	st.c	/^strdump(void)$/;"	f
 strescseq	st.c	/^static STREscape strescseq;$/;"	v	file:
 strhandle	st.c	/^strhandle(void)$/;"	f
@@ -394,14 +431,14 @@ strreset	st.c	/^strreset(void)$/;"	f
 stty	st.c	/^stty(char **args)$/;"	f
 stty_args	config.def.h	/^char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";$/;"	v
 stty_args	config.h	/^char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";$/;"	v
-t	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon5	file:
-tabs	st.c	/^	int *tabs;$/;"	m	struct:__anon14	file:
+t	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon6	file:
+tabs	st.c	/^	int *tabs;$/;"	m	struct:__anon15	file:
 tabspaces	config.def.h	/^unsigned int tabspaces = 8;$/;"	v
 tabspaces	config.h	/^unsigned int tabspaces = 8;$/;"	v
 tattrset	st.c	/^tattrset(int attr)$/;"	f
 tclearregion	st.c	/^tclearregion(int x1, int y1, int x2, int y2)$/;"	f
-tclick1	x.c	/^	struct timespec tclick1;$/;"	m	struct:__anon6	typeref:struct:__anon6::timespec	file:
-tclick2	x.c	/^	struct timespec tclick2;$/;"	m	struct:__anon6	typeref:struct:__anon6::timespec	file:
+tclick1	x.c	/^	struct timespec tclick1;$/;"	m	struct:__anon7	typeref:struct:__anon7::timespec	file:
+tclick2	x.c	/^	struct timespec tclick2;$/;"	m	struct:__anon7	typeref:struct:__anon7::timespec	file:
 tcontrolcode	st.c	/^tcontrolcode(uchar ascii)$/;"	f
 tcursor	st.c	/^tcursor(int mode)$/;"	f
 tdectest	st.c	/^tdectest(char c)$/;"	f
@@ -414,11 +451,11 @@ tdump	st.c	/^tdump(void)$/;"	f
 tdumpline	st.c	/^tdumpline(int n)$/;"	f
 tdumpsel	st.c	/^tdumpsel(void)$/;"	f
 term	st.c	/^static Term term;$/;"	v	file:
-term_mode	st.c	/^enum term_mode {$/;"	g	file:
+term_mode	st.h	/^enum term_mode {$/;"	g
 termname	config.def.h	/^char *termname = "st-256color";$/;"	v
 termname	config.h	/^char *termname = "st-256color";$/;"	v
 tfulldirt	st.c	/^tfulldirt(void)$/;"	f
-th	x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon4	file:
+th	x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon5	file:
 tinsertblank	st.c	/^tinsertblank(int n)$/;"	f
 tinsertblankline	st.c	/^tinsertblankline(int n)$/;"	f
 tlinelen	st.c	/^tlinelen(int y)$/;"	f
@@ -426,20 +463,23 @@ tmoveato	st.c	/^tmoveato(int x, int y)$/;"	f
 tmoveto	st.c	/^tmoveto(int x, int y)$/;"	f
 tnew	st.c	/^tnew(int col, int row)$/;"	f
 tnewline	st.c	/^tnewline(int first_col)$/;"	f
+toggle_winmode	x.c	/^void toggle_winmode(int flag) {$/;"	f
 toggleprinter	st.c	/^toggleprinter(const Arg *arg)$/;"	f
-top	st.c	/^	int top;      \/* top    scroll limit *\/$/;"	m	struct:__anon14	file:
+top	st.c	/^	int top;      \/* top    scroll limit *\/$/;"	m	struct:__anon15	file:
 tprinter	st.c	/^tprinter(char *s, size_t len)$/;"	f
 tputc	st.c	/^tputc(Rune u)$/;"	f
 tputtab	st.c	/^tputtab(int n)$/;"	f
-trantbl	st.c	/^	char trantbl[4]; \/* charset table translation *\/$/;"	m	struct:__anon14	file:
+trantbl	st.c	/^	char trantbl[4]; \/* charset table translation *\/$/;"	m	struct:__anon15	file:
 treset	st.c	/^treset(void)$/;"	f
 tresize	st.c	/^tresize(int col, int row)$/;"	f
 tripleclicktimeout	config.def.h	/^static unsigned int tripleclicktimeout = 600;$/;"	v
 tripleclicktimeout	config.h	/^static unsigned int tripleclicktimeout = 600;$/;"	v
-tscrolldown	st.c	/^tscrolldown(int orig, int n)$/;"	f
-tscrollup	st.c	/^tscrollup(int orig, int n)$/;"	f
+trt_kbdselect	st.c	/^int trt_kbdselect(KeySym ksym, char *buf, int len) {$/;"	f
+tscrolldown	st.c	/^tscrolldown(int orig, int n, int copyhist)$/;"	f
+tscrollup	st.c	/^tscrollup(int orig, int n, int copyhist)$/;"	f
 tsetattr	st.c	/^tsetattr(int *attr, int l)$/;"	f
 tsetchar	st.c	/^tsetchar(Rune u, Glyph *attr, int x, int y)$/;"	f
+tsetcolor	st.c	/^tsetcolor( int row, int start, int end, uint32_t fg, uint32_t bg )$/;"	f
 tsetdirt	st.c	/^tsetdirt(int top, int bot)$/;"	f
 tsetdirtattr	st.c	/^tsetdirtattr(int attr)$/;"	f
 tsetmode	st.c	/^tsetmode(int priv, int set, int *args, int narg)$/;"	f
@@ -452,16 +492,17 @@ ttyread	st.c	/^ttyread(void)$/;"	f
 ttyresize	st.c	/^ttyresize(int tw, int th)$/;"	f
 ttywrite	st.c	/^ttywrite(const char *s, size_t n, int may_echo)$/;"	f
 ttywriteraw	st.c	/^ttywriteraw(const char *s, size_t n)$/;"	f
-tw	x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon4	file:
+tw	x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon5	file:
 twrite	st.c	/^twrite(const char *buf, int buflen, int show_ctrl)$/;"	f
-type	st.c	/^	char type;             \/* ESC type ... *\/$/;"	m	struct:__anon16	file:
-type	st.c	/^	int type;$/;"	m	struct:__anon12	file:
-u	st.h	/^	Rune u;           \/* character code *\/$/;"	m	struct:__anon17
+type	st.c	/^	char type;             \/* ESC type ... *\/$/;"	m	struct:__anon17	file:
+type	st.c	/^	int type;$/;"	m	struct:__anon13	file:
+type	x.c	/^	enum resource_type type;$/;"	m	struct:__anon4	typeref:enum:__anon4::resource_type	file:
+u	st.h	/^	Rune u;           \/* character code *\/$/;"	m	struct:__anon18
 uchar	st.h	/^typedef unsigned char uchar;$/;"	t
-ui	st.h	/^	uint ui;$/;"	m	union:__anon18
+ui	st.h	/^	uint ui;$/;"	m	union:__anon19
 uint	st.h	/^typedef unsigned int uint;$/;"	t
 ulong	st.h	/^typedef unsigned long ulong;$/;"	t
-unicodep	x.c	/^	Rune unicodep;$/;"	m	struct:__anon10	file:
+unicodep	x.c	/^	Rune unicodep;$/;"	m	struct:__anon11	file:
 unmap	x.c	/^unmap(XEvent *ev)$/;"	f
 usage	x.c	/^usage(void)$/;"	f
 usedfont	x.c	/^static char *usedfont = NULL;$/;"	v	file:
@@ -479,21 +520,21 @@ utfmax	st.c	/^static Rune utfmax[UTF_SIZ + 1] = {0x10FFFF, 0x7F, 0x7FF, 0xFFFF, 
 utfmin	st.c	/^static Rune utfmin[UTF_SIZ + 1] = {       0,    0,  0x80,  0x800,  0x10000};$/;"	v	file:
 utmp	config.def.h	/^char *utmp = NULL;$/;"	v
 utmp	config.h	/^char *utmp = NULL;$/;"	v
-v	st.h	/^	const void *v;$/;"	m	union:__anon18
-vis	x.c	/^	Visual *vis;$/;"	m	struct:__anon5	file:
+v	st.h	/^	const void *v;$/;"	m	union:__anon19
+vis	x.c	/^	Visual *vis;$/;"	m	struct:__anon6	file:
 visibility	x.c	/^visibility(XEvent *ev)$/;"	f
 vtiden	config.def.h	/^char *vtiden = "\\033[?6c";$/;"	v
 vtiden	config.h	/^char *vtiden = "\\033[?6c";$/;"	v
-w	x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon4	file:
-width	x.c	/^	int width;$/;"	m	struct:__anon7	file:
-win	x.c	/^	Window win;$/;"	m	struct:__anon5	file:
+w	x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon5	file:
+width	x.c	/^	int width;$/;"	m	struct:__anon8	file:
+win	x.c	/^	Window win;$/;"	m	struct:__anon6	file:
 win	x.c	/^static TermWindow win;$/;"	v	file:
 win_mode	win.h	/^enum win_mode {$/;"	g
-wmdeletewin	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon5	file:
+wmdeletewin	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon6	file:
 worddelimiters	config.def.h	/^char *worddelimiters = " ";$/;"	v
 worddelimiters	config.h	/^char *worddelimiters = " ";$/;"	v
-x	st.c	/^		int x, y;$/;"	m	struct:__anon12::__anon13	file:
-x	st.c	/^	int x;$/;"	m	struct:__anon11	file:
+x	st.c	/^		int x, y;$/;"	m	struct:__anon13::__anon14	file:
+x	st.c	/^	int x;$/;"	m	struct:__anon12	file:
 xbell	x.c	/^xbell(void)$/;"	f
 xclear	x.c	/^xclear(int x1, int y1, int x2, int y2)$/;"	f
 xclipcopy	x.c	/^xclipcopy(void)$/;"	f
@@ -501,14 +542,14 @@ xdrawcursor	x.c	/^xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
 xdrawglyph	x.c	/^xdrawglyph(Glyph g, int x, int y)$/;"	f
 xdrawglyphfontspecs	x.c	/^xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, int y)$/;"	f
 xdrawline	x.c	/^xdrawline(Line line, int x1, int y1, int x2)$/;"	f
-xembed	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon5	file:
+xembed	x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmpid;$/;"	m	struct:__anon6	file:
 xfinishdraw	x.c	/^xfinishdraw(void)$/;"	f
 xfps	config.def.h	/^static unsigned int xfps = 120;$/;"	v
 xfps	config.h	/^static unsigned int xfps = 120;$/;"	v
 xgeommasktogravity	x.c	/^xgeommasktogravity(int mask)$/;"	f
 xhints	x.c	/^xhints(void)$/;"	f
-xic	x.c	/^	XIC xic;$/;"	m	struct:__anon5	file:
-xim	x.c	/^	XIM xim;$/;"	m	struct:__anon5	file:
+xic	x.c	/^	XIC xic;$/;"	m	struct:__anon6	file:
+xim	x.c	/^	XIM xim;$/;"	m	struct:__anon6	file:
 xinit	x.c	/^xinit(int cols, int rows)$/;"	f
 xloadcolor	x.c	/^xloadcolor(int i, const char *name, Color *ncolor)$/;"	f
 xloadcols	x.c	/^xloadcols(void)$/;"	f
@@ -529,13 +570,14 @@ xsettitle	x.c	/^xsettitle(char *p)$/;"	f
 xseturgency	x.c	/^xseturgency(int add)$/;"	f
 xstartdraw	x.c	/^xstartdraw(void)$/;"	f
 xstrdup	st.c	/^xstrdup(char *s)$/;"	f
-xtarget	x.c	/^	Atom xtarget;$/;"	m	struct:__anon6	file:
+xtarget	x.c	/^	Atom xtarget;$/;"	m	struct:__anon7	file:
+xtermclear	x.c	/^xtermclear(int col1, int row1, int col2, int row2)$/;"	f
 xunloadfont	x.c	/^xunloadfont(Font *f)$/;"	f
 xunloadfonts	x.c	/^xunloadfonts(void)$/;"	f
 xw	x.c	/^static XWindow xw;$/;"	v	file:
 xwrite	st.c	/^xwrite(int fd, const char *s, size_t len)$/;"	f
-y	st.c	/^		int x, y;$/;"	m	struct:__anon12::__anon13	file:
-y	st.c	/^	int y;$/;"	m	struct:__anon11	file:
+y	st.c	/^		int x, y;$/;"	m	struct:__anon13::__anon14	file:
+y	st.c	/^	int y;$/;"	m	struct:__anon12	file:
 zoom	x.c	/^zoom(const Arg *arg)$/;"	f
 zoomabs	x.c	/^zoomabs(const Arg *arg)$/;"	f
 zoomreset	x.c	/^zoomreset(const Arg *arg)$/;"	f
